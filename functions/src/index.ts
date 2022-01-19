@@ -7,6 +7,5 @@ import * as functions from 'firebase-functions';
 //  response.send("Hello from Firebase!");
 // });
 
-
 const universal = require(`${process.cwd()}/dist/server`).app;
 export const ssr = functions.https.onRequest(universal);
